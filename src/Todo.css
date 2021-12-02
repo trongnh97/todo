@@ -1,0 +1,30 @@
+.todo {
+	margin: 20px 0;
+}
+.todo input{
+	margin-right: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 15px;
+}
+.todo span{
+	position: absolute;
+	left: 30px;
+	color: #fff;
+}
+hr{
+	margin-top: 10px;
+	border: 1px solid #eee;
+}
+.aligned {
+	
+}
+
+.done {
+	text-decoration: line-through;
+	font-size: small;
+}
+
+.noCheckDone {
+	margin-left: 25px;
+}

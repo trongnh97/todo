@@ -1,0 +1,66 @@
+
+input{
+	outline: none;
+}
+.title p{
+	background: #cca8e9;
+	padding: 20px;
+	color: #fff;
+	font-size: 35px;
+}
+.title strong{
+	font-size: x-large;
+}
+h3{
+	color: #00adb5;
+}
+.title{
+	position: relative;
+}
+.title img{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+.title img:first-child{
+	left: 10px;
+}
+.title img:nth-child(2){
+	right: 10px;
+}
+.content{
+	align-items: center;
+    justify-content: center;
+    display: inline-block;
+	width: 600px;
+	margin-top: 20px;
+    box-shadow: 0 5px 30px rgb(0 0 0 / 10%);
+	padding: 20px;
+	background: rgba(0,0,0,0.4)
+}
+.totalTasks{
+	color: #fff;
+	float: right;
+}
+.aligned{
+	position: relative;
+	margin-top: 15px;
+}
+.aligned .fill{
+	height: 40px;
+    border-radius: 50px;
+    width: 100%;
+    border: 2px solid #eeeeee;
+	padding: 20px;
+}
+.aligned .add-img{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.todo img{
+	position: absolute;
+	right: 10px;
+}
+

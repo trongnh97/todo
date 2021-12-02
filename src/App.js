@@ -1,25 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import TodoList from './TodoList';
+class App extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = { taskName: '', tasks: [], };
+	}
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	render() {
+
+		const date = new Date();
+		const day = date.getDate()
+		const month = date.getMonth() + 1
+		const year = date.getFullYear()
+		const today = day + '-' + month + '-' + year
+
+		return (
+			<div className='App'>
+				<div className="title">
+					<img src='/assets/left-arrow.png' alt="" />
+					<img src='/assets/right-arrow.png' alt="" />
+					<p>{today}</p>
+				</div>
+
+				<div className="content">
+					<h3>Today's work</h3>
+					<TodoList />
+				</div>
+
+			</div>
+		);
+	}
 }
 
 export default App;
